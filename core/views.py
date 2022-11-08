@@ -161,9 +161,6 @@ def faqs(request):
     return render(request, 'faqs.html')
 
 
-def blog_details(request):
-    return render(request, 'blog_details.html')
-
 def checkout(request):
     return render(request, 'checkout.html')
 
