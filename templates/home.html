@@ -359,10 +359,10 @@
                     <div class="col-xl-2 col-lg-3 col-md-4">
                         <div class="categories__item p-relative w-img mb-30">
                             <div class="categories__img b-radius-2">
-                                <a href="{% url 'product' %}"><img src="{{i.image}}" alt=""></a>
+                                <a href="{% url 'product' %}"><img src="{{i.image.url}}" alt=""></a>
                             </div>
                             <div class="categories__content">
-                                <h6><a href="{% url 'product' %}">{{i.title}}</a></h6>
+                                <h6><a href="{% url 'product' %}">{{i.category}}</a></h6>
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from core.models import Slider, Baner, Main_Category, Product,Category,Color, Popular, Recommended,Blog_Category
+from core.models import Slider, Baner, Main_Category, Product,Category,Color, Popular_Section, Recommended,Blog_Category
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, logout, login
 from django.contrib import messages
@@ -18,10 +18,10 @@ def home(request):
 
     # Category
     main_category = Main_Category.objects.all()
-    popular = Popular.objects.all()[0:6]
+    popular = Popular_Section.objects.all()[0:6]
 
     # Products Section
-    products = Product.objects.filter(section__name = "Top Deals Of The Day")
+    products = Product.objects.filter(section__name = "Top Deals Of The Day").order_by('-id')[0:4]
     fproduct = Product.objects.all()[0:4]
     recommended = Recommended.objects.all()
 

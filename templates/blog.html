@@ -90,10 +90,10 @@
                                 {% for i in recommended %}
                                   <li>
                                      <div class="feed-number">
-                                           <a href="{% url 'product_detail' i.pk %}"><img src="{{i.image.url}}" alt=""></a>
+                                           <a href=""><img src="{{i.image.url}}" alt=""></a>
                                      </div>
                                      <div class="feed-content">
-                                           <h6><a href="{% url 'product_detail' i.pk %}">{{i.title}}</a></h6>
+                                           <h6><a href="">{{i.title}}</a></h6>
                                            <span class="feed-date">
                                               <i class="fal fa-calendar-alt"></i> {{i.data|date}}
                                            </span>

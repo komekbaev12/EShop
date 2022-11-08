@@ -107,12 +107,12 @@ class Additional_Information(models.Model):
     specificational = models.CharField(max_length=100)
     detail = models.CharField(max_length=100)
 
-class Popular(models.Model):
-    title = models.ForeignKey(Category,on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='media/popular/',null=True, blank=True)
+class Popular_Section(models.Model):
+    category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='media/cat/',null=True, blank=True)
+
     
-    def __str__(self):
-        return self.title
+   
 
 class Blog_Category(models.Model):
     name = models.CharField(max_length=100)

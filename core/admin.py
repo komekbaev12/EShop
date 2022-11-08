@@ -10,7 +10,7 @@ class ProductAdminForm(forms.ModelForm):
     class Meta:
         model = Product 
         fields = '__all__'
-# Register your models here.
+
 
 class Product_Images(admin.TabularInline):
     model = Product_Image
@@ -38,7 +38,7 @@ admin.site.register(Product,Product_Admin)
 admin.site.register(Color)
 admin.site.register(Product_Image)
 admin.site.register(Additional_Information)
-admin.site.register(Popular)
+admin.site.register(Popular_Section)
 admin.site.register(Blog_Category)
 admin.site.register(Recommended)
 
