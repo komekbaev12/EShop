@@ -25,6 +25,6 @@ urlpatterns = [
 
     
 
-    # Error page
+    # Error page 
     path('404/', views.errors, name="404"),
 ]

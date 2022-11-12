@@ -149,7 +149,7 @@ def user_login(request):
 
 
 
-# Differt Pages
+# Different Pages
 
 def cart(request):
     return render(request,'cart.html')
